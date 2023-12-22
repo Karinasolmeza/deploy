@@ -1,26 +1,26 @@
+/* Estilos generales para pantallas más grandes (escritorio) */
 .contenedorDetalle {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     height: 100vh;
-}
-
-.col {
+  }
+  
+  .col {
     position: absolute;
     max-width: 400px;
     margin: 15px;
     height: auto;
     width: 80%;
     border-radius: 15px;
-}
-
-.imagenDrink {
+  }
+  
+  .imagenDrink {
     margin-top: 50px;
     margin-right: 500px;
-}
-
-
-.tragoDetalle {
+  }
+  
+  .tragoDetalle {
     font-size: 1rem;
     padding: 50px 15px;
     color: white;
@@ -31,23 +31,64 @@
     height: 290px;
     text-align: justify;
     text-justify: inter-word;
-    height:auto;
+    height: auto;
     background-color: rgba(30, 30, 30, 0.8)
-}
-
-.item {
+  }
+  
+  .item {
     font-size: 2rem;
     margin-top: 0;
     padding-top: -20px;
     text-align: center;
     text-transform: uppercase;
-}
-
-.backgroundImage {
+  }
+  
+  .backgroundImage {
     position: relative;
     z-index: -1;
     margin-top: -100px;
     width: 1000px;
     opacity: 60%;
     filter: blur(4px);
-}
+  }
+  
+  /* Estilos para dispositivos móviles */
+  /* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    /* Ajustes específicos para dispositivos móviles dentro de .contenedorDetalle */
+    .contenedorDetalle {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .contenedorDetalle .col {
+        position: static;
+         }
+  
+    .contenedorDetalle .imagenDrink {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
+      margin-top: 20px;
+    }
+  
+    .contenedorDetalle .tragoDetalle {
+      font-size: 1rem;
+      padding: 20px;
+      color: white;
+      border: 1px solid white;
+      width: 100%;
+      text-align: justify;
+      text-justify: inter-word;
+      background-color: rgba(30, 30, 30, 0.8);
+      margin-right: 0;
+    }
+  
+    .contenedorDetalle .backgroundImage {
+      display: none;
+    }
+  
+    /* Resto de los estilos para dispositivos móviles si es necesario */
+    /* ... */
+  }

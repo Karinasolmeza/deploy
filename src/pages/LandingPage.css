@@ -1,14 +1,14 @@
 
-  .containerNeon {
-    border: 2px solid white;
-    box-shadow: inset 0 0 5px red, 0 0 10px red;
-    border-radius: 60px;
-    max-width: 600px;    
-    margin: 150px auto 200px;
-    padding: 50px;
-    text-align: center;
-    color: white; 
-  }
+.containerNeon {
+  border: 2px solid white;
+  box-shadow: inset 0 0 5px red, 0 0 10px red;
+  border-radius: 60px;
+  max-width: 600px;    
+  margin: 150px auto 200px;
+  padding: 50px;
+  text-align: center;
+  color: white; 
+}
   
   .neon {
     font-family: "Dancing Script", cursive;
@@ -53,10 +53,26 @@
     .containerNeon{
       transform: scale(0.9);
     }    
+    .neon2 {
+      font-size: 70px;
+    }
 }
 
 @media (max-width:540px){
   .containerNeon{
     transform: scale(0.7);
   }    
+  .neon2 {
+    font-size: 60px;
+  }
+}
+
+
+@media (max-width:767px){
+  .containerNeon{
+    transform: scale(0.7);
+  }    
+  .neon2 {
+    font-size: 60px;
+  }
 }

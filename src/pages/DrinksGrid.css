@@ -11,7 +11,7 @@
 
 @media (max-width:560px){
     .drinksGrid{
-        grid-template-columns: 100%;
+        grid-template-columns: 50%;
     }
 }
 
