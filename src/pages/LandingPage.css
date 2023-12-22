@@ -73,6 +73,19 @@
     transform: scale(0.7);
   }    
   .neon2 {
-    font-size: 60px;
+    font-size: 40px;
   }
 }
+
+@media (max-width: 320px) {
+  .containerNeon {
+    max-width: 280px; /* Reducir el ancho del contenedor */
+    margin: 100px auto 150px; /* Ajustar el margen para centrar el contenedor */
+    padding: 20px; 
+  }
+
+  .neon2 {
+    font-size: 20px;
+  }
+}
+

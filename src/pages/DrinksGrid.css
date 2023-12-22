@@ -9,9 +9,21 @@
     
 }
 
-@media (max-width:560px){
+@media (max-width:767px){
     .drinksGrid{
-        grid-template-columns: 50%;
+        grid-template-columns: 40%;
     }
 }
 
+
+@media (max-width:560px){
+    .drinksGrid{
+        grid-template-columns: 65%;
+    }
+}
+
+@media (max-width:320px){
+    .drinksGrid{
+        grid-template-columns: 20%;
+    }
+}
